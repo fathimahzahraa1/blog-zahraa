@@ -23,7 +23,7 @@ Project ini dibuat untuk memenuhi tugas Project Individu mata kuliah Pemrograman
 ## Cara Instalasi
 
 1. Clone repository ini
-git clone <link-repo-anda>
+git clone https://github.com/fathimahzahraa1/blog-zahraa.git
 cd blog-zahraa
 
 2. Install dependency PHP
