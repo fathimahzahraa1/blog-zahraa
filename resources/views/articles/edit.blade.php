@@ -25,7 +25,7 @@
 
                 <div class="mb-4">
                         <label for="title" class="block text-sm font-medium text-gray-700 mb-1">Judul</label>
-                        <input type="text" name="title" id="title" value="{{ old('title', $article->title) }}""
+                        <input type="text" name="title" id="title" value="{{ old('title', $article->title) }}"
                                class="w-full rounded-lg border-gray-300 focus:border-pink-400 focus:ring-pink-400">
                     </div>
 
@@ -48,8 +48,10 @@
 
                     @if ($article->thumbnail)
                         <div class="mb-2">
-                            <img src="{{ Storage::url($article->thumbnail) }}" alt="Thumbnail saat ini"
-                                class="w-15 h-15 object-cover rounded-lg">
+                            <img src="{{ Storage::url($article->thumbnail) }}"
+                                alt="Thumbnail saat ini"
+                                style="width: 180px; height: 180px; object-fit: cover;"
+                                class="rounded-lg border shadow">
                             <p class="text-xs text-gray-500 mt-1">Thumbnail saat ini (upload file baru untuk mengganti)</p>
                         </div>
                     @endif
