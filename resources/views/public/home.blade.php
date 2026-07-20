@@ -41,9 +41,9 @@
 
                     @if ($article->thumbnail)
                         <img src="{{ Storage::url($article->thumbnail) }}" alt="{{ $article->title }}"
-                             class="w-full h-40 object-cover">
+                             class="w-full h-32 object-cover">
                     @else
-                        <div class="w-full h-40 bg-pink-100"></div>
+                        <div class="w-full h-32 bg-pink-100"></div>
                     @endif
 
                     <div class="p-4">

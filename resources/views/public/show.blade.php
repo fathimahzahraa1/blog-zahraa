@@ -24,7 +24,7 @@
 
             @if ($article->thumbnail)
                 <img src="{{ Storage::url($article->thumbnail) }}" alt="{{ $article->title }}"
-                     class="w-full h-64 object-cover">
+                     class="w-full h-64 object-containt">
             @endif
 
             <div class="p-6">

@@ -49,7 +49,7 @@ copy .env.example .env
 php artisan key:generate
 ```
 
-6. Buat database baru di MySQL, misal bernama `blog_zahraa`, lalu sesuaikan konfigurasi di ```
+6. Buat database baru di MySQL, misal bernama `blog_zahraa`, lalu sesuaikan konfigurasi di ```bash
 file `.env`:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -58,14 +58,15 @@ DB_DATABASE=blog_zahraa
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-
+```
 7. Jalankan migration dan seeder
 ```bash
 php artisan migrate --seed
 ```
-
 8. Buat symbolic link untuk storage (supaya thumbnail artikel bisa tampil)
+```bash
 php artisan storage:link
+```
 
 9. Jalankan server
 ```bash
