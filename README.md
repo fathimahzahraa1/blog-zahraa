@@ -23,45 +23,62 @@ Project ini dibuat untuk memenuhi tugas Project Individu mata kuliah Pemrograman
 ## Cara Instalasi
 
 1. Clone repository ini
+```bash
 git clone https://github.com/fathimahzahraa1/blog-zahraa.git
 cd blog-zahraa
+```
 
 2. Install dependency PHP
+```bash
 composer install
+```
 
 3. Install dependency JavaScript/CSS
+```bash
 npm install
 npm run build
+```
 
 4. Salin file `.env.example` menjadi `.env`
+```bash
 copy .env.example .env
+```
 
 5. Generate application key
+```bash
 php artisan key:generate
+```
 
-6. Buat database baru di MySQL, misal bernama `blog_zahraa`, lalu sesuaikan konfigurasi di file `.env`:
+6. Buat database baru di MySQL, misal bernama `blog_zahraa`, lalu sesuaikan konfigurasi di ```
+file `.env`:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=blog_zahraa
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 7. Jalankan migration dan seeder
+```bash
 php artisan migrate --seed
+```
 
 8. Buat symbolic link untuk storage (supaya thumbnail artikel bisa tampil)
 php artisan storage:link
 
 9. Jalankan server
+```bash
 php artisan serve
+```
 
 10. Buka `http://127.0.0.1:8000` di browser
 
 ## Akun Demo
-
+```
 Email: fathimah.240170199@mhs.unimal.ac.id
 Password: (zahra1201)
+```
 
 ## Sumber Referensi
 
