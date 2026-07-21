@@ -24,7 +24,7 @@
 
             @if ($article->thumbnail)
                 <img src="{{ Storage::url($article->thumbnail) }}" alt="{{ $article->title }}"
-                     class="w-full h-64 object-containt">
+                     class="w-full h-64 object-cover">
             @endif
 
             <div class="p-6">
@@ -38,7 +38,7 @@
                     Oleh {{ $article->user->name }} — {{ $article->created_at->format('d M Y') }}
                 </p>
 
-                <div class="text-gray-700 leading-relaxed whitespace-pre-line">
+                <div class="text-gray-700 leading-relaxed whitespace-pre-line break-words">
                     {{ $article->content }}
                 </div>
                 <div class="bg-white rounded-lg shadow-sm p-6 mt-6">

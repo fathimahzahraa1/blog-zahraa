@@ -7,12 +7,29 @@
 </head>
 <body class="bg-pink-50">
 
-    <nav class="bg-white shadow-sm">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-pink-600">Blog Pribadi</h1>
-            <a href="{{ route('login') }}" class="text-sm text-pink-600 hover:text-pink-800">Login</a>
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <h1 class="text-2xl font-bold text-pink-600">
+            Blog Pribadi
+        </h1>
+
+        <div class="flex items-center gap-3">
+
+            <a href="{{ route('login') }}"
+                class="text-pink-600 font-medium hover:text-pink-800 transition">
+                Login
+            </a>
+
+            <a href="{{ route('register') }}"
+                class="text-pink-600 font-medium hover:text-pink-800 transition">
+                Register
+            </a>
+
         </div>
-    </nav>
+
+    </div>
+</nav>
 
     <div class="max-w-6xl mx-auto px-6 py-10">
 

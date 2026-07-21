@@ -37,6 +37,7 @@
                                         <span class="{{ $article->status == 'published' ? 'text-green-600' : 'text-yellow-600' }}">
                                             {{ ucfirst($article->status) }}
                                         </span>
+                                        — {{ $article->created_at->format('d M Y') }}
                                     </p>
                                 </div>
                             </div>
